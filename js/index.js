@@ -158,7 +158,7 @@ $(function(){
     pmremGenerator.compileEquirectangularShader();
 
     const rgbeLoader = new RGBELoader();
-    rgbeLoader.load('./textures/env_1.hdr', function(texture) {
+    rgbeLoader.load('https://masud.eu.org/icons/env_1.hdr', function(texture) {
 
         const envMap = pmremGenerator.fromEquirectangular(texture).texture;
 
