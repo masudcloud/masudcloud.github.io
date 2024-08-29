@@ -173,7 +173,7 @@ $(function(){
 
     loader3.load(
         // resource URL
-        'https://masud.eu.org/icons/Resource.glb', //paste avatar link here
+        'https://masud.eu.org/icons/ResourceYellow.glb', //paste avatar link here
         // called when the resource is loaded
         function ( gltf ) {
 
