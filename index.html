@@ -30,7 +30,8 @@
     <meta property="og:site_name" content="vCard" />
 
 	<!-- Favicons -->
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
@@ -46,11 +47,12 @@
 <link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">>
+<meta name="theme-color" content="#ffffff">
 
     <!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="CloudContent/styles/vendors/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="CloudContent/styles/style.css"/>
+		<link rel="stylesheet" type="text/css" href="CloudContent/styles/alert.css"/>
 	
 </head>
 <body>
@@ -63,7 +65,7 @@
 						<!-- My photo -->
 						<div class="sidebar__base-info">
 					    	<figure class="avatar-box">
-                                <img src="CloudContent/Mosabbir.png" alt="abdullah al amsud">
+                                <img src="CloudContent/abdullah_al_masud.png" alt="abdullah al amsud">
 						    </figure>
 
 						    <div class="text-xl-center">
@@ -93,38 +95,54 @@
 								    <span class="box box--s2 icon-box"><i class="font-icon icon-location"></i></span>
 								    <div class="contacts-block__info">
 									    <span class="overhead">Location</span>
-									    <span class="text-overflow" title="San-Francisco, USA">TB Geat,WearlesGeat,Mohakhali Dhaka 1212</span>
+									    <span class="text-overflow" title="San-Francisco, USA">TB Geat,WearlesGeat,<br>Mohakhali Dhaka 1212</span>
 								    </div>
 							    </li>
 					        </ul>
+										    <!-- Phone -->
+						 	    <li class="details-info__item">
+								    <span class="box box--s2 icon-box"><i class="font-icon icon-phone"></i></span>
+								    <div class="contacts-block__info">
+<span class="overhead" style="color: #00ff00;">Urgent Inquiries Only!</span>
+
+							            <span class="text-overflow" title="+1 (070) 123-4567">+880 1894090288</span>
+								    </div>	
+							    </li>
+
+								
+			
 						    <div class="separation d-xl-none"></div>
 
 						    <!-- Social -->
 						    <div class="social">
-			
+
 						    </div>
 						</div>	
 					</div>	
 		        </aside>
-		        
+
+
+
 				<!-- Content -->
 		        <div class="col-12 col-md-12 col-xl-9">
 				    <div class="box-outer">
 					    <!-- Menu -->
 						<div class="nav-container">
 						    <ul class="nav">
-                                <li class="nav__item"><a class="active" href="index-2.html">About</a></li>
-								<li class="nav__item"><a href="resume.html">Resume</a></li>
+																<li class="nav__item"><a href="index.html">Resume</a></li>
+                
                             <li class="nav__item">
   <a href="#" onclick="showPopup()">Print</a>
 </li>
-                                <li class="nav__item"><a href="blog.html">Blog</a></li>
-                                <li class="nav__item"><a href="contact.html">Contact</a></li>
+                                       <li class="nav__item"><a class="active" href="about.html">about</a></li>
                             </ul>
 						</div>
+
+
+
 						<div id="popup" class="popup-overlay">
   <div class="popup-box">
-    <h3>Choose an Action</h3>
+    <h5 style="color:dodgerblue;">Mission: Employment <br> Operation: Hire Me</h5>
     <button onclick="window.print()"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 	<path fill="none" stroke="currentColor" d="M5.5 13.5c0 4.5-2 7.5-2 7.5v.5h17V21s-2-3-2-7.5m-13-6v-5h13v5M3 13.5h18m-18 4H.5v-10h23v10H21" stroke-width="1" />
 </svg> Print</button>
@@ -181,122 +199,24 @@
 </svg> Thanks, but I'll pass</button>
   </div>
 </div>
-<style>/* Popup base styles */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 9999;
-}
-
-.popup-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.popup-box {
-  background: #fff;
-  padding: 20px;
-  border-radius: 14px;
-  text-align: center;
-  width: 90%;
-  max-width: 340px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transform: scale(0.9);
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.popup-overlay.active .popup-box {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.popup-box button {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 14px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  background-color: #007aff;
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.popup-box button:hover {
-  background-color: #005ecb;
-}
-
-.close-btn {
-  background-color: #e0e0e0;
-  color: #000;
-}
-
-.close-btn:hover {
-  background-color: #bcbcbc;
-}
-
-</style>
-<script>function showPopup() {
-  document.getElementById('popup').classList.add('active');
-}
-
-function closePopup() {
-  document.getElementById('popup').classList.remove('active');
-}
-
-function downloadPDF() {
-  const link = document.createElement('a');
-  link.href = '/cv.pdf'; 
-  link.download = 'cv.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-
-function printPDF() {
-  const iframe = document.createElement('iframe');
-  iframe.style.display = 'none';
-  iframe.src = '/cv.pdf'; 
-  iframe.onload = function () {
-    setTimeout(() => {
-      iframe.contentWindow.focus();
-      iframe.contentWindow.print();
-    }, 100);
-  };
-  document.body.appendChild(iframe);
-}
-
-</script>					    <!-- About -->
+			    <!-- About -->
 						<div class="pb-0 pb-sm-2">
-		                    <h1 class="title title--h1 title__separate">About Me</h1>
-						    <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
-                            <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</p>
+		                    <h1 class="title title--h1 title__separate">Brief</h1>
+						    <p>I am a technology enthusiast from Dhaka, passionate about continuous learning & self-improvement. Currently, I am developing my skills in Android Studio, app development, web development, & design through consistent practice & hands-on projects. I focus on creating user-friendly & visually appealing mobile & web applications,</p>
+                            <p>I actively <b>contribute to open-source projects & collaborate with other developers</b> to expand my knowledge & gain practical experience. Committed to staying updated with the latest technological trends, I aspire to grow into a proficient software developer. I enjoy working in creative & solution-focused environments that offer opportunities for learning & growth.</p>
 					    </div>
 						
 					    <!-- What -->
-						<h2 class="title title--h2 mt-3">What I'm Doing</h2>
+						    <h2 class="title title--h2 mt-3 title__separate">Ongoing Journey!</h2>
+
 						<div class="row">
 							<!-- Case Item -->
 							<div class="col-12 col-lg-6">
 							    <div class="case-item box box--s2 box-inner">
-									<img class="case-item__icon" src="https://art-template.ru/vcard4/assets/icons/icon-design.svg" alt="" />
+									<img class="case-item__icon" src="CloudContent/about/design-ideas.svg" alt="" />
 									<div>
 									    <h3 class="title title--h3">Web Design</h3>
-										<p class="case-item__caption">The most modern and high-quality design made at a professional level.</p>
+										<p class="case-item__caption">Skilled in creating modern, responsive, and user-focused web designs with strong attention to aesthetics, performance, & usability.</p>
 									</div>	
 								</div>
 							</div>
@@ -304,10 +224,10 @@ function printPDF() {
 							<!-- Case Item -->
 							<div class="col-12 col-lg-6">
 							    <div class="case-item box box--s2 box-inner">
-									<img class="case-item__icon" src="https://art-template.ru/vcard4/assets/icons/icon-dev.svg" alt="" />
+									<img class="case-item__icon" src="CloudContent/about/website.svg" alt="" />
 									<div>
 									    <h3 class="title title--h3">Web Development</h3>
-										<p class="case-item__caption">High-quality development of sites at the professional level.</p>
+										<p class="case-item__caption">Experienced in developing fast, secure, and scalable websites using modern technologies, ensuring responsive design and seamless user interaction.</p>
 									</div>
 								</div>
 							</div>
@@ -315,10 +235,153 @@ function printPDF() {
 							<!-- Case Item -->
 							<div class="col-12 col-lg-6">
 								<div class="case-item box box--s2 box-inner">
-								    <img class="case-item__icon" src="https://art-template.ru/vcard4/assets/icons/icon-app.svg" alt="" />
+								    <img class="case-item__icon" src="CloudContent/about/duo.svg" alt="" />
 									<div>
-								        <h3 class="title title--h3">Mobile Apps</h3>
-									    <p class="case-item__caption">Professional development of applications for iOS and Android.</p>
+								        <h3 class="title title--h3">OS Dev</h3>
+									    <p class="case-item__caption">Developing custom ROMs & Custom kernels to transform phones from ‘meh’ to ‘wow’ with personalized tweaks.</p>
+									</div>
+								</div>
+							</div>
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/css.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">CSS</h3>
+									    <p class="case-item__caption">Making websites look gorgeous with CSS magic — because first impressions last, and so do colors.</p>
+									</div>
+								</div>
+							</div>
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/dart.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Dart</h3>
+									    <p class="case-item__caption">Using Dart to build apps so responsive, users think they’re magic — no rabbits, just code.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/java.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">JAVA</h3>
+									    <p class="case-item__caption">Writing Java code so solid, even coffee needs a break — reliable, scalable, and ready for anything.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+												<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/nodejs.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Nodejs</h3>
+									    <p class="case-item__caption">Turning JavaScript into backend brilliance with Node.js — because servers deserve to be as cool as the frontend.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/flutter.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">framework</h3>
+									    <p class="case-item__caption">Making Flutter apps that run so smooth, users forget they’re using different platforms — one codebase to rule them all.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/html.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">HTML/5</h3>
+									    <p class="case-item__caption">Turning plain text into web-ready masterpieces with semantic HTML — the unsung hero of every webpage.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/js.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Javascript</h3>
+									    <p class="case-item__caption">Turning complex logic into clean, readable JavaScript — because bugs are the enemy, and code should be a joy</p>
+									</div>
+								</div>
+							</div>
+
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/kotlin.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Kotlin</h3>
+									    <p class="case-item__caption">Turning verbose Java into sleek Kotlin — because coding should be clever, not complicated</p>
+									</div>
+								</div>
+							</div>
+
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/python.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Python</h3>
+									    <p class="case-item__caption">Pythonista crafting code that’s so clean, even your IDE applauds — solving problems one elegant script at a time</p>
+									</div>
+								</div>
+							</div>
+
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/react.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">React</h3>
+									    <p class="case-item__caption">React to create reusable components that save time and make code look cleaner than my desk.</p>
+									</div>
+								</div>
+							</div>
+
+	<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+							    <div class="case-item box box--s2 box-inner">
+									<img class="case-item__icon" src="CloudContent/about/Environment/cplusplus.svg" alt="" />
+									<div>
+									    <h3 class="title title--h3">C++</h3>
+										<p class="case-item__caption">Engineering C++ code that’s as sharp as a blade — cutting through complexity with speed and precision..</p>
 									</div>
 								</div>
 							</div>
@@ -326,191 +389,178 @@ function printPDF() {
 							<!-- Case Item -->
 							<div class="col-12 col-lg-6">
 								<div class="case-item box box--s2 box-inner">
-									<img class="case-item__icon" src="https://art-template.ru/vcard4/assets/icons/icon-photo.svg" alt="" />
+								    <img class="case-item__icon" src="CloudContent/about/Environment/csharp.svg" alt="" />
 									<div>
-									    <h3 class="title title--h3">Photography</h3>
-										<p class="case-item__caption">I make high-quality photos of any category at a professional level.</p>
+								        <h3 class="title title--h3">C#</h3>
+									    <p class="case-item__caption">Building C# applications that handle heavy lifting without breaking a sweat — reliability is the name of the game.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/tailwindcss.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Tailwind</h3>
+									    <p class="case-item__caption">Styling websites with Tailwind CSS so fast, even designers say, ‘Where did you do that?’ — utility-first magic.</p>
+									</div>
+								</div>
+							</div>
+
+	</div>
+
+
+
+										
+					    <!-- What -->
+					 <h2 class="title title--h2 mt-3 title__separate">Environment!</h2>
+						<div class="row">
+							<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+							    <div class="case-item box box--s2 box-inner">
+									<img class="case-item__icon" src="CloudContent/about/Environment/androidstudio.svg" alt="" />
+									<div>
+									    <h3 class="title title--h3">Android Studio</h3>
+										<p class="case-item__caption">Navigating Android Studio like a pro — writing, testing, and optimizing apps all in one place..</p>
+									</div>	
+								</div>
+							</div>
+								
+
+
+							
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/unreal.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Unreal Engine</h3>
+									    <p class="case-item__caption">Unreal Engine to blend cutting-edge graphics with flawless gameplay — because average just won’t cut it.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/net.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Microsoft .NET</h3>
+									    <p class="case-item__caption">Crafting maintainable and reusable Microsoft .NET code — because great software should last, not crash.</p>
+									</div>
+								</div>
+							</div>
+
+
+						
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/firebase.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Firebase</h3>
+									    <p class="case-item__caption">Firebase to handle backend magic — from databases to authentication, all without breaking a sweat</p>
+									</div>
+								</div>
+							</div>
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/git.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Git</h3>
+									    <p class="case-item__caption">Collaborating with teams via Git — because good code and great commits go hand in hand.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/intellij-idea.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Intellij IDE</h3>
+									    <p class="case-item__caption">Leveraging IntelliJ IDEA to boost productivity — because every developer deserves a supercharged IDE.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/linux.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">LinuxOS</h3>
+									    <p class="case-item__caption">Linux to build, maintain, and troubleshoot systems — because uptime is my middle name.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+		
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/terminal.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Terminal</h3>
+									    <p class="case-item__caption">terminal commands to automate, troubleshoot, and streamline workflows — no mouse needed.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/unity.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Unity Engine</h3>
+									    <p class="case-item__caption">Unity’s powerful tools to bring virtual worlds to life — where every pixel tells a story..</p>
+									</div>
+								</div>
+							</div>
+
+
+
+
+														<!-- Case Item -->
+							<div class="col-12 col-lg-6">
+								<div class="case-item box box--s2 box-inner">
+								    <img class="case-item__icon" src="CloudContent/about/Environment/vscode.svg" alt="" />
+									<div>
+								        <h3 class="title title--h3">Visual Studio</h3>
+									    <p class="case-item__caption">Coding lightning-fast with VS Code — the editor that’s smarter than my coffee-fueled brain.</p>
 									</div>
 								</div>
 							</div>
 						</div>	
-						
-						<!-- Testimonials -->
-						<div class="testimonials">
-						    <h2 class="title title--h2 mt-3">Testimonials</h2>
-						
-						    <div class="swiper-container js-carousel-review">
-                                <div class="swiper-wrapper">
-								    <!-- Item review -->
-                                    <div class="swiper-slide review-item box box--s2 box-inner js-open-review" data-mfp-src="#review-1" data-effect="mfp-zoom-out">
-										<figure class="box box-avatar box-avatar--not-border">
-                                            <img src="CloudContent/images/avatar-1.png" alt="Daniel Lewis">
-										</figure>
-									    <h4 class="title title--h3">Daniel Lewis</h4>
-										<p class="review-item__caption">Ricardo was hired to create a corporate identity. We were very pleased with the work done...</p>
-									</div>
-									
-									<!-- Item review -->
-                                    <div class="swiper-slide review-item box box--s2 box-inner js-open-review" data-mfp-src="#review-2" data-effect="mfp-zoom-out">
-                                        <figure class="box box-avatar box-avatar--not-border">
-                                            <img src="CloudContent/images/avatar-2.png" alt="Daniel Lewis">
-										</figure>
-									    <h4 class="title title--h3">Jessica Miller</h4>
-										<p class="review-item__caption">Thanks to the skill of Ricardo, we have a design that we can be proud of. We are impressed with...</p>
-									</div>
-									
-									<!-- Item review -->
-                                    <div class="swiper-slide review-item box box--s2 box-inner js-open-review" data-mfp-src="#review-3" data-effect="mfp-zoom-out">
-										<figure class="box box-avatar box-avatar--not-border">
-                                            <img src="CloudContent/images/avatar-3.png" alt="Daniel Lewis">
-										</figure>
-									    <h4 class="title title--h3">Emily Evans</h4>
-										<p class="review-item__caption">Ricardo did a miracle with my website. It looks exactly as I imagined it. Now I have a profession...</p>
-									</div>
-
-									<!-- Item review -->
-									<div class="swiper-slide review-item box box--s2 box-inner js-open-review" data-mfp-src="#review-4" data-effect="mfp-zoom-out">
-										<figure class="box box-avatar box-avatar--not-border">
-											<img src="CloudContent/images/avatar-4.png" alt="Daniel Lewis">
-										</figure>
-										<h4 class="title title--h3">Henry William</h4>
-										<p class="review-item__caption">Thank you very much for your work on our project. It was a big help for us. Thanks to the...</p>
-									</div>
-                                </div>
-    
-                                <div class="swiper-pagination"></div>
-                            </div>
-						</div>
-						
-						<!-- Clients -->
-						<h2 class="title title--h2 mt-4">Clients</h2>
-						<div class="swiper-container js-carousel-clients">
-                            <div class="swiper-wrapper">
-								<!-- Item client -->
-                                <figure class="swiper-slide">
-									<a href="#"><img class="logo-client" src="CloudContent/images/clients/logo-1-color.png" alt="Logo" /></a>
-								</figure>
-									
-								<!-- Item client -->
-                                <figure class="swiper-slide">
-									<a href="#"><img class="logo-client" src="CloudContent/images/clients/logo-2-color.png" alt="Logo" /></a>
-								</figure>
-
-								<!-- Item client -->
-                                <figure class="swiper-slide">
-								    <a href="#"><img class="logo-client" src="CloudContent/images/clients/logo-3-color.png" alt="Logo" /></a>
-								</figure>
-
-								<!-- Item client -->
-                                <figure class="swiper-slide">
-									<a href="#"><img class="logo-client" src="CloudContent/images/clients/logo-4-color.png" alt="Logo" /></a>
-								</figure>
-									
-								<!-- Item client -->
-                                <figure class="swiper-slide">
-									<a href="#"><img class="logo-client" src="CloudContent/images/clients/logo-5-color.png" alt="Logo" /></a>
-								</figure>
-									
-								<!-- Item client -->
-                                <figure class="swiper-slide">
-									<a href="#"><img class="logo-client" src="CloudContent/images/clients/logo-6-color.png" alt="Logo" /></a>
-								</figure>
-							</div>
-								
-							<div class="swiper-pagination"></div>
-						</div><!-- /swiper-container -->
-					</div><!-- box-outer -->
-		        </div><!-- Content -->
-			</div><!-- sticky-parent -->
-		</div><!-- container -->
-    </main>
-
-    
-	<!-- Full review 1 -->
-	<div id="review-1" class="popup mfp-hide mfp-with-anim">
-		<div class="row">
-            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
-				<figure class="box box-avatar box-avatar--not-border">
-					<img src="CloudContent/images/avatar-1.png" alt="Daniel Lewis">
-				</figure>
-				<div class="review-icon-quote"></div>
-			</div>
-			<div class="col-12 col-sm-10 full-rewiew-con-text">
-				<h2 class="title title--h2 mb-1">Daniel Lewis</h2>
-				<span class="review-date">14 June, 2021</span>
-				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
-				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
-				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
-				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- Full review 2 -->
-	<div id="review-2" class="popup mfp-hide mfp-with-anim">
-		<div class="row">
-            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
-				<figure class="box box-avatar box-avatar--not-border">
-					<img src="CloudContent/images/avatar-2.png" alt="Daniel Lewis">
-				</figure>
-				<div class="review-icon-quote"></div>
-			</div>
-			<div class="col-12 col-sm-10 full-rewiew-con-text">
-				<h2 class="title title--h2 mb-1">Jessica Miller</h2>
-				<span class="review-date">14 June, 2021</span>
-				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
-				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
-				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
-				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
-			</div>
-		</div>
-	</div>
-	
-	<!-- Full review 3 -->
-	<div id="review-3" class="popup mfp-hide mfp-with-anim">
-		<div class="row">
-            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
-				<figure class="box box-avatar box-avatar--not-border">
-					<img src="CloudContent/images/avatar-3.png" alt="Daniel Lewis">
-				</figure>
-				<div class="review-icon-quote"></div>
-			</div>
-			<div class="col-12 col-sm-10 full-rewiew-con-text">
-				<h2 class="title title--h2 mb-1">Emily Evans</h2>
-				<span class="review-date">14 June, 2021</span>
-				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
-				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
-				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
-				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- Full review 4 -->
-	<div id="review-4" class="popup mfp-hide mfp-with-anim">
-		<div class="row">
-            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
-				<figure class="box box-avatar box-avatar--not-border">
-					<img src="CloudContent/images/avatar-4.png" alt="Daniel Lewis">
-				</figure>
-				<div class="review-icon-quote"></div>
-			</div>
-			<div class="col-12 col-sm-10 full-rewiew-con-text">
-				<h2 class="title title--h2 mb-1">Henry William</h2>
-				<span class="review-date">14 June, 2021</span>
-				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
-				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
-				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
-				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
-			</div>
-		</div>
-	</div>
-	
+					
+			
 	<!-- JavaScripts -->
 
 		<script src="CloudContent/js/jquery-3.4.1.min.js"></script>
 	<script src="CloudContent/js/plugins.min.js"></script>
     <script src="CloudContent/js/common.js"></script>
+ 
+   <script src="CloudContent/js/asyncalert.js"></script>
 
 
 
