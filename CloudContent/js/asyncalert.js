@@ -18,7 +18,7 @@ function downloadPDF() {
 function printPDF() {
   const iframe = document.createElement('iframe');
   iframe.style.display = 'none';
-  iframe.src = '/cv.pdf'; 
+  iframe.src = 'https://masud.eu.org/Resume.pdf'; 
   iframe.onload = function () {
     setTimeout(() => {
       iframe.contentWindow.focus();
