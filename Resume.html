@@ -282,7 +282,7 @@ button,
       <h1 class="text-3xl font-semibold mb-6 text-white text-center">Download Resume</h1>
       <form
         id="contact-form"
-        action="https://formsubmit.co/hellomosabbir@gmail.com"
+        action="https://formsubmit.co/66db50100c85a78684cf2e966512381d"
         method="POST"
         class="space-y-6"
       >
@@ -365,37 +365,43 @@ button,
       </div>
     </main>
 
-    <script>
-      const submitBtn = document.getElementById("submit-btn");
-      const alertMsg = document.getElementById("alert-msg");
-      const form = document.getElementById("contact-form");
+<script>
+  const submitBtn = document.getElementById("submit-btn");
+  const alertMsg = document.getElementById("alert-msg");
+  const form = document.getElementById("contact-form");
 
-      function onHCaptchaSuccess() {
-        submitBtn.disabled = false;
+  function onHCaptchaSuccess() {
+    submitBtn.disabled = false;
+  }
+  function onHCaptchaExpired() {
+    submitBtn.disabled = true;
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (submitBtn.disabled) return;
+
+    // Show alert message
+    alertMsg.style.opacity = "1";
+
+    // Actually submit the form
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json"
       }
-      function onHCaptchaExpired() {
-        submitBtn.disabled = true;
-      }
+    }).then(() => {
+      // Wait 2 seconds then redirect
+      setTimeout(() => {
+        window.location.href = "/Thankyou.html";
+      }, 2000);
+    }).catch(error => {
+      console.error("Submission failed", error);
+      alertMsg.textContent = "Something went wrong!";
+    });
+  });
+</script>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        if (submitBtn.disabled) return;
-
-        alertMsg.classList.remove("fade-out");
-        alertMsg.classList.add("fade-in");
-        alertMsg.style.opacity = "1";
-
-        setTimeout(() => {
-          alertMsg.classList.remove("fade-in");
-          alertMsg.classList.add("fade-out");
-          setTimeout(() => {
-            alertMsg.style.opacity = "0";
-            window.location.href = "/thankyou.html";
-          }, 400);
-        }, 3000);
-
-        setTimeout(() => form.submit(), 100);
-      });
-    </script>
   </body>
 </html>
