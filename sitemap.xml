@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://masud.eu.org/</loc>
+	<lastmod>2025-06-17T08:20:28+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://masud.eu.org/index.html</loc>
+	<lastmod>2025-06-17T08:20:28+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://masud.eu.org/about.html</loc>
+	<lastmod>2025-06-17T08:20:28+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://masud.eu.org/session.html</loc>
+	<lastmod>2025-06-17T08:20:29+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://masud.eu.org/Resume.pdf</loc>
+	<lastmod>2025-06-17T08:20:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
