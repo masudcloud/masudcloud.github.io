@@ -1,0 +1,34 @@
+User-agent: *
+Disallow:
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: Slurp
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
+User-agent: Baiduspider
+Disallow:
+
+User-agent: Yandex
+Disallow:
+
+User-agent: Sogou
+Disallow:
+
+User-agent: OpenAI
+Disallow:
+
+User-agent: AIbot
+Disallow:
+
+User-agent: GPTBot
+Disallow:
+
+Sitemap: https://masud.eu.org/sitemap.xml
